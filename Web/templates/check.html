@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="dist/css/covid19.css" rel="stylesheet" />
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+
+
+
+
+    <title>HealthSafe</title>
+  </head>
+
+  <body>
+    <style>
+      #container
+      {
+        text-align: center;
+      }
+      #myProgress {
+        width: 100%;
+        background-color: rgb(233, 233, 233);
+        border-radius: 10px;
+      }
+
+      #myBar {
+        width: 0%;
+        color: white;
+        height: 30px;
+        background-color: rgb(0, 241, 0);
+        border-radius: 10px;
+      }
+  </style>
+
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container">
+  <a class="navbar-brand" href="#"> <i class="fas fa-head-side-mask"></i>
+HealthSafe</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item">
+        <a  id="tab" class="nav-link " href="check.html">Self Check</a>
+      </li>
+        <li class="nav-item">
+        <a  id="tab" class="  nav-link  " href="stats.html">Latest Stats</a>
+      </li>
+    </ul>
+   </div>
+  </div>
+</nav>
+<div class="homepage   ">
+        <div class="container" id="container">
+          <div class="row card">
+              <div class="col-md-12 mt-5 card-body">
+                <div id="myProgress">
+                  <div id="myBar"></div>
+                </div>
+                  <h5 id="quesNo" class="text-primary mb-2"></h5>
+                  <p class="h4">
+                      <h4 id="question"></h4> 
+                      <span class="text-danger ml-3" id="score"></span>
+                  </p>
+                  <button class="btn btn-primary mr-3" onclick="btn_yes()">Yes</button>
+                  <button class="btn btn-danger" onclick="btn_no()">No</button>
+                   <span class="ml-5"><button class="btn btn-secondary mr-3" onclick="btn_reset()">Reset</button>
+              </div>
+              <div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-danger text-center h2" id="modal-title"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body" id="modal-body">
+                             <p id="message"></p>  
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+  
+          </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  </body>
+  </html>
+                    
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <div class="footersecond">
+        <div class="container">
+          <div class="row justify-content-between">
+<p>© Copyright 2020. All Rights Reserved</p>
+<p>Design by Albenis Kerqeli</p>
+
+</div>
+          </div>
+        </div>
+</div>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="script.js">
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  </body>
+</html>

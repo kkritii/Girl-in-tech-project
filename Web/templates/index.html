@@ -1,0 +1,224 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href='{% static "style.css"%}' rel='stylesheet'>
+<link href="dist/css/covid19.css" rel="stylesheet" />
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+
+    <title>HealthSafe</title>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container">
+  <a class="navbar-brand" href="#"> <i class="fas fa-head-side-mask"></i>HealthSafe</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link appoint" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item">
+        <a  id="tab" class="nav-link " href="check.html">Self Check</a>
+      </li>
+        <li class="nav-item">
+        <a  id="tab" class="  nav-link  " href="stats.html">Latest Stats</a>
+      </li>
+    </ul>
+   </div>
+  </div>
+</nav>
+<div class="homepage   ">
+  <div class="container  " >
+    <div class="row  ">
+      <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <div class="section1  ">
+                      <h1 class="display-4">Self Care,<strong>Better Life</strong></h1>
+        <p class="lead">Coronavirus is destroying many people. lets together try to destroy this virus</p>
+        <button class="btn-lg  homepagebtn" onClick="document.getElementById('about').scrollIntoView();">Learn More</button>
+      </div>
+      </div>
+
+            <div class="col-lg-6  col-xl-6 col-md-6 col-sm-12 col-xs-12  ">
+                    <div class="section2  ">
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="about">
+  <div class="container">
+    <div class="row">
+<div class="col-lg-6  col-xl-6 col-md-6 col-sm-12 col-xs-12  ">
+
+<div class="section3"></div>
+</div>
+<div class="col-lg-6  col-xl-6 col-md-6 col-sm-12 col-xs-12  ">
+  <div class="section4">
+              <h1 class="display-4">How Covid-19 affects our life</h1>   
+              <p class="lead">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+
+Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+ </p>
+              </div>  
+</div>
+
+    </div>
+  </div>
+
+  </div>
+   <div id="about" class="symptoms">
+    <h1>Commons signs of Covid 19</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="signs">
+          <img src="{% static 'images/coughing.png' %}">
+          <h1 class="display-6">Coughing</h1>
+          {% comment %} <p class="lead">this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)</p> {% endcomment %}
+          </div>
+    </div>
+          <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="signs">
+          <img src="{% static "images/fever.png" %}">
+          <h1 class="display-6">Fever</h1>
+          {% comment %} <p class="lead">this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)</p> {% endcomment %}
+          </div>
+    </div>
+            <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="signs">  <img src="{% static "images/breath.png" %}">
+          <h1 class="display-6">Difficulty breathing</h1>
+          {% comment %} <p class="lead">this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)</p> {% endcomment %}
+          </div>
+    </div>
+
+          <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="signs">  <img src="{% static "images/tiredness.png" %}">
+          <h1 class="display-6">Tiredness</h1>
+          {% comment %} <p class="lead">this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)</p> {% endcomment %}
+          </div>
+    </div>
+  
+          <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="signs"><img src="{% static "images/pain.png" %}">
+          <h1 class="display-6">Muscle aches</h1>
+          {% comment %} <p class="lead">this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)</p> {% endcomment %}
+          </div>
+    </div>
+          <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="signs"><img src="{% static "images/chill.png" %}">
+          <h1 class="display-6">Chills</h1>
+          {% comment %} <p class="lead">this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)</p> {% endcomment %}
+          </div>
+    </div>
+       
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="steps">
+  <h1>Tips to stay healthier</h1>
+  <div class="container">
+    <div class="row">
+       <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="tips"> 
+<img src="{% static "images/wash-hand.png" %}">          <h1 class="text-center">Wash your hands</h1>
+            <p class="lead">Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.</p>
+            </div>
+    </div>
+       <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="tips">           
+        <img src="{% static "images/distancing.jpg" %}" height="100px" width="100px">
+
+          <h1 class="text-center">Social distancing</h1>
+           <p class="lead"> Avoid large events and gathering.
+</p></div>
+    </div>
+       <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="tips">         
+<img src="{% static "images/nopeople.png" %}" height="100px" width="100px">
+          <h1 class="text-center">Avoid infected people</h1>
+  <p class="lead"> Avoid close contact (within 6 feet, or 2 meters) with anyone who is sick or has symptoms of Covid-19.
+</p></div>
+    </div>
+       <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="tips">           
+<img src="{% static "images/mask.jpg" %}" height="100px" width="100px">
+          <h1 class="text-center">Use Protective Gears</h1>
+           <p class="lead">Cover your face with a mask in public places like grocery stores and avoid close contact with others.</p></div>
+    </div>
+       <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="tips ">         
+<img src="{% static "images/sharinggg.svg" %}" height="100px" width="100px">
+          <h1 class="text-center">No Sharing</h1>
+            <p class="lead">Avoid sharing dishes, glasses, towels, bedding and other household items if you are sick.
+</p></div>
+    </div>
+       <div class="col-lg-4  col-xl-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="tips ">         
+<img src="{% static "images/clean.jpg" %}" height="100px" width="100px">
+          <h1 class="text-center">Maintain Cleanliness</h1>
+          <p class="lead">Clean and disinfect high-touch surfaces.
+</p>
+
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="stats">
+    <div class="container">
+      <div class="row">
+
+<div class="elfsight-app-d3df42b4-bd1d-47d0-9741-18d94f55c037"></div>     </div>
+    </div>
+  </div>
+  <div class="contact">
+    <div class="imaged">
+    <div class="container">
+      <div class="text2">
+<h1 class="display-4">Feeling Dizziness, sneezing or illness?</h1>
+<h2 class="txt2">Simply contact the emergency numbers </h2>
+
+
+</div>
+    </div>
+  </div>
+</div>
+
+<br style="margin:30px">
+
+
+ <div class="footersecond">
+        <div class="container">
+          <div class="row justify-content-between">
+<h2>© Copyright 2020. All Rights Reserved</h2>
+<h2>Design by Albenis Kerqeli</h2>
+
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="script.js">
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  </body>
+</html>
