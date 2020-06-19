@@ -1,0 +1,537 @@
+body {
+	padding: 0;
+	margin: 0;
+
+}
+
+:root {
+	--blue: #2962FF;
+	--white: #2962FF;
+	--black: #000;
+	--lightblue: #EBF4FF;
+	--lights: #f1f5f8;
+	--gray: #f7f7f7;
+	--theme: blue;
+
+}
+
+/* Navbar Designing */
+.navbar {
+	background-color: transparent;
+	width: 100%;
+	min-height: 100px;
+}
+
+.nav-item {
+	padding: 0 10px;
+}
+
+.dbb {
+	background-color: var(--theme);
+	color: var(--white);
+}
+
+.blue {
+	background-color: var(--blue);
+	color: white;
+
+}
+
+.nav-link {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.nav-item .appoint {
+	background-color: var(--blue);
+	color: white;
+	border-radius: 5px;
+}
+
+.navbar-brand {
+	color: #212121;
+	font-family: 'Josefin Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	font-weight: 600;
+}
+
+.navbar-brand i {
+	color: var(--blue);
+	font-size: 25px;
+}
+
+/* Homepage Design*/
+.homepage {
+	width: 100%;
+	min-height: 80vh;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: transparent;
+}
+
+.homepage .section1 {
+	width: 100%;
+	min-height: 500px;
+	margin: 10px;
+	display: flex;
+	align-items: flex-start;
+	background-color: transparent;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.section1 .display-4 {
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;
+	padding: 20px 0;
+
+}
+
+.section1 .lead {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+	padding: 20px 0;
+	color: #212121;
+}
+
+.section1 .homepagebtn {
+	color: white;
+	border: none;
+	background-color: var(--blue);
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.homepage strong {
+	color: var(--blue);
+	margin: 0 10px;
+}
+
+
+
+
+.homepage .section2 {
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	background: url(images/cor1.png);
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+/* About Design*/
+.about {
+	width: 100%;
+	min-height: 709px;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: transparent;
+}
+
+.about .section3 {
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	background: url(images/cor3.svg);
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-size: cover;
+	background-position: center;
+}
+
+.about .section4 {
+	width: 100%;
+	min-height: 500px;
+	margin: 10px;
+	display: flex;
+	align-items: flex-start;
+	background-color: transparent;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.section4 .display-4 {
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;
+	padding: 20px 0;
+}
+
+.section4 .lead {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+	padding: 20px 0;
+	font-size: 17px;
+	color: #212121;
+}
+
+
+/* Symptoms Design*/
+
+.symptoms {
+	width: 100%;
+	min-height: 500px;
+	background: var(--lightblue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0;
+	flex-direction: column;
+}
+
+.symptoms h1 {
+	padding: 30px 0;
+}
+
+.symptoms img {
+	width: 70%;
+	margin: 10px 0;
+
+}
+
+.symptoms .display-4 {
+	color: #121212 !important;
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Muli', sans-serif;
+
+}
+
+.symptoms .lead {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+	color: gray;
+	font-size: 17px;
+
+}
+
+.symptoms .signs {
+	width: 100%;
+	margin: 20px 0;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* Steps Design*/
+
+.steps {
+	width: 100%;
+	min-height: 500px;
+	background: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0;
+	flex-direction: column;
+}
+
+.steps h1 {
+	padding: 30px 0;
+}
+
+
+
+.tips .image1 {
+	width: 100%;
+	min-height: 150px;
+	background-image: url(images/cor4.svg);
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.tips .text-center {
+	color: var(--blue);
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+
+	font-family: 'Muli', sans-serif;
+
+}
+
+.tips .lead {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+	color: #121212;
+	text-align: center;
+
+	font-size: 17px;
+
+}
+
+.steps .tips {
+	width: 100%;
+	margin: 40px 0;
+	min-height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+
+.tips .image2 {
+	width: 100%;
+	min-height: 170px;
+	background-image: url(images/cor5.svg);
+	background-size: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Stats Design*/
+
+.stats {
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: var(--lightblue);
+
+}
+
+
+/* Covid-19 Widget Design*/
+
+.elfsight-app-d3df42b4-bd1d-47d0-9741-18d94f55c037 {
+	width: 100% !important;
+	min-height: 600px;
+
+	padding: 20px 0;
+}
+
+
+
+.eUEpGU {
+	color: var(--blue);
+	font-weight: bold;
+	padding: 30px 0;
+
+
+}
+
+.ddvFgM {
+	color: black !important;
+
+}
+
+.kZhlts {
+	margin: 15px 10px !important;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+}
+
+
+.fDvpUd {
+	color: black;
+	font-weight: bold !important;
+	opacity: 1 !important;
+
+}
+
+
+/* Contact  Design*/
+.contact {
+	width: 100%;
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	opacity: 1;
+
+	background: var(--blue);
+	background-position: center;
+
+}
+
+.text2 {
+	width: 100%;
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.text2 .display-4 {
+	color: white;
+	font-weight: bold;
+	font-family: 'Muli', sans-serif;
+	padding: 20px 0;
+}
+
+.text2 .txt2 {
+	color: white;
+	font-size: 30px;
+}
+
+.contactbtn {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	padding: 20px 0;
+}
+
+.cbtn {
+	background-color: white;
+	color: var(--blue);
+	font-weight: bold;
+	border: none;
+	outline: none;
+	margin: 0 10px;
+}
+
+.cbtn i {
+	color: var(--blue);
+}
+
+
+/* Footer  Design*/
+.footer {
+	width: 100%;
+	min-height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	flex-direction: column;
+}
+
+.foot1 {
+	width: 100%;
+	min-height: 300px;
+	background: white;
+	margin: 20px 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.foot1 .navbar-brand {
+	padding: 5px 0;
+}
+
+.foot1 .lead {
+	padding: 5px 0;
+	color: black;
+	opacity: 0.9;
+
+}
+
+
+.foot {
+	width: 100%;
+	min-height: 300px;
+	background: white;
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.foot .nav-link {
+	color: var(--blue);
+	font-weight: 600;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+.abt {
+	font-size: 17px;
+	text-align: center;
+	font-weight: bold;
+	padding: 20px 0;
+	font-family: 'Muli', sans-serif;
+}
+
+.icons {
+	width: 100%;
+	min-height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+
+
+}
+
+.icons i {
+	background-color: var(--blue);
+	color: white;
+	width: 50px;
+	font-size: 20px;
+	min-height: 50px;
+	margin-right: 20px;
+	margin-left: -10px;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footersecond {
+	width: 100%;
+	min-height: 70px;
+	background-color: var(--blue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.footersecond h2 {
+	color: white;
+	font-size: 15px;
+}
+
+table {
+	width: fit-content;
+
+}
+
+td {
+	padding: 0% 3%;
+}

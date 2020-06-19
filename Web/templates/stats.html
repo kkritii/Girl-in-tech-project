@@ -1,0 +1,271 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='{% static "style.css"%}' rel='stylesheet'>
+    <link href="dist/css/covid19.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+
+
+
+
+    <title>HealthSafe</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <i class="fas fa-head-side-mask"></i>HealthSafe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Symptoms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="tab" class="nav-link " href="#">Steps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="tab" class="nav-link appoint" href="/stat">Latest Stats</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                    <div class="section4">
+                        <iframe
+                            src="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+                            style="width: 100%; height: 600px; border: 0px none;"></iframe>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <div class="table-responsive">
+                        <table id='covid-data' class='table table-striped'>
+                            <thead class="thead-dark">
+                                <th>Countries</th>
+                                <th>CountryCode</th>
+                                <th>Total Confirmed</th>
+                                <th>New Confirmed</th>
+                                <th>New Deaths</th>
+                                <th>New Recovered</th>
+                                <th>Total Deaths</th>
+                                <th>Updated_on</th>
+                            </thead>
+                            <tbody id='covid_body' class='table-hover'></tbody>
+
+                        </table>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+
+    <!-- <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-4 col-md-12 col-xs-12 col-sm-12">
+                        <div class="foot1"> <a class="navbar-brand" href="#"> <i class="fas fa-head-side-mask"></i>
+
+                                HealthSafe</a>
+                            <p class="lead">Health Safe is Covid-19 Website that tells people how to destrouy the famous
+                                virus covid 19. </p>
+                            <div class="col-lg-4 col-xl-12 col-md-12 col-xs-12 col-sm-12">
+
+                                <div class="icons">
+                                    <div class="row">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-youtube"></i>
+                                        <i class="fab fa-whatsapp"></i>
+
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-12 col-xs-12 col-sm-12">
+                        <div class="foot">
+                            <h2 class="abt">About</h2>
+
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-12 col-xs-12 col-sm-12  ">
+                        <div class="foot">
+                            <h2 class="abt">About</h2>
+
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-12 col-xs-12 col-sm-12">
+                        <div class="foot">
+                            <h2 class="abt">About</h2>
+
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-12 col-xs-12 col-sm-12">
+                        <div class="foot">
+                            <h2 class="abt">About</h2>
+
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div> -->
+
+    <div class="footersecond">
+        <div class="container">
+            <div class="row justify-content-between">
+                <h2>© Copyright 2020. All Rights Reserved</h2>
+                <h2>Design by Albenis Kerqeli</h2>
+
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="script.js">
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script>
+        const url = "https://api.covid19api.com/summary"
+        table = document.getElementById('covid_body');
+        table_data = '';
+        fetch(url)
+            .then(Response => Response.json())
+            .then(Response => {
+
+                Response.Countries.map(repos => {
+                    console.log(repos);
+                    table_data += '<tr><td>' + repos['Country'] + '</td><td>' + repos[
+                            'CountryCode'] + '</td><td>' + repos['TotalConfirmed'] + '</td><td>' + repos[
+                            'NewConfirmed'] +
+                        '</td><td>' + repos['NewDeaths'] +
+                        '</td><td>' + repos['NewRecovered'] +
+                        '</td><td>' + repos['TotalDeaths'] +
+                        '</td><td>' + repos['Date'] + '</td></tr>';
+
+                });
+
+                table.innerHTML = table_data;
+            })
+    </script>
+</body>
+
+</html>
