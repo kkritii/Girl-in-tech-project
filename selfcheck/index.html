@@ -16,7 +16,7 @@
     <div class="container" id="container">
         <div class="row card">
             <div class="col-md-12 mt-5 card-body">
-                <h5 id="quesNo" class="text-primary mb-2"></h5>
+                {% comment %} <h5 id="quesNo" class="text-primary mb-2"></h5> {% endcomment %}
                 <p class="h4">
                     <h4 id="question"></h4> 
                     <span class="text-danger ml-3" id="score"></span>
@@ -53,6 +53,6 @@
    
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="{% static 'question.js' %}"></script>
 </body>
 </html>

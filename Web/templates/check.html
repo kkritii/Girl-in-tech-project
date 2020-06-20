@@ -1,10 +1,13 @@
 <!doctype html>
+{% load static %}
+
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" type="text/css" href="style.css">
+    <link href='{% static "style.css"%}' rel='stylesheet'>
 <link href="dist/css/covid19.css" rel="stylesheet" />
 
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -13,20 +16,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <title>HealthCare</title>
 
-
-
-
-    <title>HealthSafe</title>
-  </head>
-
-  <body>
     <style>
       #container
       {
         text-align: center;
       }
-      #myProgress {
+      #progress {
         width: 100%;
         background-color: rgb(233, 233, 233);
         border-radius: 10px;
@@ -41,10 +45,15 @@
       }
   </style>
 
-  <nav class="navbar navbar-expand-lg  ">
+
+  </head>
+
+  <body>
+
+
+ <nav class="navbar navbar-expand-lg  ">
     <div class="container">
-  <a class="navbar-brand" href="#"> <i class="fas fa-head-side-mask"></i>
-HealthSafe</a>
+  <a class="navbar-brand" href="#"> HealthCare</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -52,26 +61,30 @@ HealthSafe</a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
        <li class="nav-item">
-        <a  id="tab" class="nav-link " href="check.html">Self Check</a>
+        <a  id="tab" class="nav-link appoint" href="/check">Self Check</a>
       </li>
         <li class="nav-item">
-        <a  id="tab" class="  nav-link  " href="stats.html">Latest Stats</a>
+        <a  id="tab" class="  nav-link " href="/stat">Latest Stats</a>
+
       </li>
     </ul>
    </div>
   </div>
 </nav>
-<div class="homepage   ">
+<div style='margin:4%'>
+<h1 style="text-align:center">Covid Self Test Questionaire</h1>
+<div>
+<div class="" style='margin:5%'>
         <div class="container" id="container">
           <div class="row card">
-              <div class="col-md-12 mt-5 card-body">
-                <div id="myProgress">
+              <div class="col-md-12 mt-5 p-12 card-body">
+                {% comment %} <div id="progress">
                   <div id="myBar"></div>
-                </div>
-                  <h5 id="quesNo" class="text-primary mb-2"></h5>
+                </div> {% endcomment %}
+                  {% comment %} <h5 id="quesNo" class="text-primary mb-2"></h5> {% endcomment %}
                   <p class="h4">
                       <h4 id="question"></h4> 
                       <span class="text-danger ml-3" id="score"></span>
@@ -118,18 +131,18 @@ HealthSafe</a>
 </div>
 
 
- <div class="footersecond">
+ {% comment %} <div class="footersecond">
         <div class="container">
-          <div class="row justify-content-between">
+          <div class="">
 <p>© Copyright 2020. All Rights Reserved</p>
 <p>Design by Albenis Kerqeli</p>
 
-</div>
+</div> {% endcomment %}
           </div>
         </div>
 </div>
     <!-- Optional JavaScript -->
-    <script type="text/javascript" src="script.js">
+    <script type="text/javascript" src="{% static 'question.js'%}">
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -12,4 +12,7 @@ def index(request):
 
 def stats(request):
     return render(request,'stats.html')
+
+def question(request):
+    return render(request,'check.html')
   
